@@ -1,0 +1,745 @@
+{
+  "version": "21.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "AppsyncCdkAppStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AppsyncCdkAppStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/AppsyncCdkAppStack": [
+          {
+            "type": "aws:cdk:asset",
+            "data": {
+              "path": "asset.371e96a2e678da1c4980ef999e4d36f8d365b764b56e52ac70ff2c3faacd1bed",
+              "id": "371e96a2e678da1c4980ef999e4d36f8d365b764b56e52ac70ff2c3faacd1bed",
+              "packaging": "zip",
+              "sourceHash": "371e96a2e678da1c4980ef999e4d36f8d365b764b56e52ac70ff2c3faacd1bed",
+              "s3BucketParameter": "AssetParameters371e96a2e678da1c4980ef999e4d36f8d365b764b56e52ac70ff2c3faacd1bedS3BucketE5212EC6",
+              "s3KeyParameter": "AssetParameters371e96a2e678da1c4980ef999e4d36f8d365b764b56e52ac70ff2c3faacd1bedS3VersionKey83D2C9F4",
+              "artifactHashParameter": "AssetParameters371e96a2e678da1c4980ef999e4d36f8d365b764b56e52ac70ff2c3faacd1bedArtifactHash38E9B997"
+            },
+            "trace": [
+              "ConstructNode.addMetadata (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/construct-compat.ts:453:92)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:187:23)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "AppsyncCdkAppStack.addFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:42:25)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/Api/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiF70053CD",
+            "trace": [
+              "new GraphqlApi (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/graphqlapi.ts:483:16)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/Api/Schema": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiSchema510EECD7",
+            "trace": [
+              "Schema.bind (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/schema.ts:80:21)",
+              "new GraphqlApi (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/graphqlapi.ts:499:39)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/Api/DefaultApiKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApiDefaultApiKeyF991C37B",
+            "trace": [
+              "GraphqlApi.createAPIKey (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/graphqlapi.ts:668:12)",
+              "new GraphqlApi (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/graphqlapi.ts:518:34)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:13:17)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/Api/lambdaDatasource/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceServiceRole2CA75790",
+            "trace": [
+              "new Role (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "new BaseDataSource (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/data-source.ts:120:47)",
+              "new BackedDataSource (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/data-source.ts:168:5)",
+              "new LambdaDataSource (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/data-source.ts:301:5)",
+              "GraphqlApi.addLambdaDataSource (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/graphqlapi-base.ts:219:12)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:49:26)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/Api/lambdaDatasource/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceServiceRoleDefaultPolicy3A97E34D",
+            "trace": [
+              "new Policy (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "Function.addToPrincipal (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Function.addToPrincipalOrResource (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-iam/lib/grant.ts:115:26)",
+              "Function.grant (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:511:29)",
+              "Function.grantInvoke (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:429:20)",
+              "new LambdaDataSource (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/data-source.ts:307:26)",
+              "GraphqlApi.addLambdaDataSource (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/graphqlapi-base.ts:219:12)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:49:26)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/Api/lambdaDatasource/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasource2C776EE2",
+            "trace": [
+              "new BaseDataSource (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/data-source.ts:124:15)",
+              "new BackedDataSource (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/data-source.ts:168:5)",
+              "new LambdaDataSource (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/data-source.ts:301:5)",
+              "GraphqlApi.addLambdaDataSource (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/graphqlapi-base.ts:219:12)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:49:26)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/Api/lambdaDatasource/QuerygetNoteByIdResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceQuerygetNoteByIdResolverE0029E24",
+            "trace": [
+              "new Resolver (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/resolver.ts:108:21)",
+              "LambdaDataSource.createResolver (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/data-source.ts:139:12)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:51:14)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/Api/lambdaDatasource/QuerylistNotesResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceQuerylistNotesResolverA04323FA",
+            "trace": [
+              "new Resolver (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/resolver.ts:108:21)",
+              "LambdaDataSource.createResolver (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/data-source.ts:139:12)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:56:14)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/Api/lambdaDatasource/MutationcreateNoteResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceMutationcreateNoteResolver9158206A",
+            "trace": [
+              "new Resolver (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/resolver.ts:108:21)",
+              "LambdaDataSource.createResolver (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/data-source.ts:139:12)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:60:14)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/Api/lambdaDatasource/MutationdeleteNoteResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceMutationdeleteNoteResolver16050EFC",
+            "trace": [
+              "new Resolver (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/resolver.ts:108:21)",
+              "LambdaDataSource.createResolver (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/data-source.ts:139:12)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:65:14)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/Api/lambdaDatasource/MutationupdateNoteResolver/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ApilambdaDatasourceMutationupdateNoteResolverA2113FA0",
+            "trace": [
+              "new Resolver (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/resolver.ts:108:21)",
+              "LambdaDataSource.createResolver (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-appsync/lib/data-source.ts:139:12)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:70:14)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/GraphQLAPIURL": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphQLAPIURL",
+            "trace": [
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:28:5)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/GraphQLAPIKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "GraphQLAPIKey",
+            "trace": [
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:33:5)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/Stack Region": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "StackRegion",
+            "trace": [
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:38:5)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/AppSyncNotesHandler/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppSyncNotesHandlerServiceRole34415D7F",
+            "trace": [
+              "new Role (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-iam/lib/role.ts:381:18)",
+              "new Function (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:688:31)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:42:25)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/AppSyncNotesHandler/ServiceRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppSyncNotesHandlerServiceRoleDefaultPolicy12C70C4F",
+            "trace": [
+              "new Policy (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-iam/lib/role.ts:431:28)",
+              "Function.addToPrincipal (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-iam/lib/grant.ts:164:61)",
+              "Table.combinedGrant (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:994:29)",
+              "Table.grantFullAccess (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:767:17)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:83:16)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/AppSyncNotesHandler/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppSyncNotesHandler4B870A76",
+            "trace": [
+              "new Function (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:771:35)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:42:25)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/AssetParameters/371e96a2e678da1c4980ef999e4d36f8d365b764b56e52ac70ff2c3faacd1bed/S3Bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters371e96a2e678da1c4980ef999e4d36f8d365b764b56e52ac70ff2c3faacd1bedS3BucketE5212EC6",
+            "trace": [
+              "new FileAssetParameters (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:16:32)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "AppsyncCdkAppStack.addFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:42:25)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/AssetParameters/371e96a2e678da1c4980ef999e4d36f8d365b764b56e52ac70ff2c3faacd1bed/S3VersionKey": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters371e96a2e678da1c4980ef999e4d36f8d365b764b56e52ac70ff2c3faacd1bedS3VersionKey83D2C9F4",
+            "trace": [
+              "new FileAssetParameters (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:21:31)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "AppsyncCdkAppStack.addFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:42:25)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/AssetParameters/371e96a2e678da1c4980ef999e4d36f8d365b764b56e52ac70ff2c3faacd1bed/ArtifactHash": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AssetParameters371e96a2e678da1c4980ef999e4d36f8d365b764b56e52ac70ff2c3faacd1bedArtifactHash38E9B997",
+            "trace": [
+              "new FileAssetParameters (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/asset-parameters.ts:26:34)",
+              "LegacyStackSynthesizer.doAddFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:170:16)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:86:19)",
+              "AppsyncCdkAppStack.addFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack.ts:683:29)",
+              "/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:53",
+              "withoutDeprecationWarnings (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:219:12)",
+              "LegacyStackSynthesizer.addFileAsset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stack-synthesizers/legacy.ts:91:14)",
+              "new Asset (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-s3-assets/lib/asset.ts:152:40)",
+              "AssetCode.bind (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-lambda/lib/code.ts:285:20)",
+              "new Function (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-lambda/lib/function.ts:708:29)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:42:25)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/CDKNotesTable/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKNotesTable254A7FD1",
+            "trace": [
+              "new Table (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/aws-dynamodb/lib/table.ts:1180:18)",
+              "new AppsyncCdkAppStack (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/lib/appsync-cdk-app-stack.ts:75:24)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/bin/appsync-cdk-app.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Module.m._compile (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1618:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/index.ts:1621:12)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "phase4 (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:649:14)",
+              "bootstrap (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:95:10)",
+              "main (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:55:10)",
+              "Object.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/ts-node/src/bin.ts:800:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1105:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)",
+              "Module.load (node:internal/modules/cjs/loader:981:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/app.ts:131:45)",
+              "Object.onceWrapper (node:events:642:26)",
+              "process.emit (node:events:527:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@cspotcode/source-map-support/source-map-support.js:745:40)"
+            ]
+          }
+        ],
+        "/AppsyncCdkAppStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@aws-cdk/core/lib/app.ts:131:45)",
+              "Object.onceWrapper (node:events:642:26)",
+              "process.emit (node:events:527:28)",
+              "process.emit (node:domain:475:12)",
+              "process.emit.sharedData.processEmitHook.installedValue [as emit] (/Users/dhirajsonavane/Documents/git/personal/appsync-cdk-app/node_modules/@cspotcode/source-map-support/source-map-support.js:745:40)"
+            ]
+          }
+        ]
+      },
+      "displayName": "AppsyncCdkAppStack"
+    }
+  }
+}
